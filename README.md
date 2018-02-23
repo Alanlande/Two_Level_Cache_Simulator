@@ -13,24 +13,43 @@ make
 Usage: ./myCache [-hv] -option  <num>  -t <file>
   
 Options (default setting is 0):
+
   -a <num>   Choose associativity for cache level 1.
+  
   -A <num>   Choose associativity for cache level 2.
+  
   -c <num>   Cache capacity (in byte) for cache level 1.
+  
   -C <num>   Cache capacity (in byte) for cache level 2.
+  
   -M <num>   Set cache mode, 0 for 1 level cache, 1 for 2 levels.
+  
   -w <num>   Allocate write miss on cache level 1, 1 for valid.
+  
   -W <num>   Allocate write miss on cache level 2, 1 for valid.
+  
   -l <num>   Cache level 1 hit time in cycle.
+  
   -L <num>   Cache level 2 hit time in cycle.
+  
   -D <num>   DRAM hit time in cycle.
+  
   -R <num>   Replacement algorithm, 0 for LRU, 1 for RND.
+  
   -e <num>   Number of lines per set for cache level 1.
+  
   -E <num>   Number of lines per set for cache level 2.
+  
   -s <num>   Number of set index in bit for cache level 1.
+  
   -S <num>   Number of set index in bit for cache level 2.
+  
   -b <num>   Number of block offset in bit for cache level 1.
+  
   -B <num>   Number of block offset in bit for cache level 1.
+  
   -t <file>  Trace file.
+  
   -h         Print this help message.
 
 Examples of direct map of one level cache:
