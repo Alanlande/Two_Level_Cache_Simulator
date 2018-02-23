@@ -11,6 +11,7 @@ make
 ./myCache: Missing required command line argument
 
 Usage: ./myCache [-hv] -option  <num>  -t <file>
+  
 Options (default setting is 0):
   -a <num>   Choose associativity for cache level 1.
   -A <num>   Choose associativity for cache level 2.
@@ -33,11 +34,15 @@ Options (default setting is 0):
   -h         Print this help message.
 
 Examples of direct map of one level cache:
+
   ./myCache  -A 1 -c 8 -C 8 -M 0 -l 2 -L 40 -D 200 -W 1 -R 0 -B 5 -t ./test.txt
 
 Examples of direct map of 2 level cache:
+
   ./myCache  -a 1 -A 1 -c 4 -C 16 -M 1 -l 2 -L 40 -D 200 -w 1 -W 1 -R 0 -b 5 -B 6 -t ./test.txt
 
 Examples of direct map for cache 1 and set-associative for cache 2 of 2 level cache:
+
   ./myCache  -a 1 -A 2 -c 16 -C 256 -M 1 -l 2 -L 40 -D 200 -w 1 -W 1 -R 0 -E 4 -S 10 -b 5 -B 6 -t ./test.txt
+  
   ./myCache  -a 1 -A 2 -c 16 -C 256 -M 1 -l 2 -L 40 -D 200 -w 1 -W 1 -R 0 -E 4 -S 10 -b 5 -B 6 -t ./spec026.ucomp.din.txt
