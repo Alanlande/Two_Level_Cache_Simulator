@@ -5,7 +5,7 @@
 Achieved all configurations of direct-mapped, set-associative, fully associative and functionalities of memory read and write of high accuracy and performances
 
 ## Usage:
-
+```sh
 make
 
 ./myCache: Missing required command line argument
@@ -65,3 +65,4 @@ Examples of direct map for cache 1 and set-associative for cache 2 of 2 level ca
   ./myCache  -a 1 -A 2 -c 16 -C 256 -M 1 -l 2 -L 40 -D 200 -w 1 -W 1 -R 0 -E 4 -S 10 -b 5 -B 6 -t ./test.txt
   
   ./myCache  -a 1 -A 2 -c 16 -C 256 -M 1 -l 2 -L 40 -D 200 -w 1 -W 1 -R 0 -E 4 -S 10 -b 5 -B 6 -t ./spec026.ucomp.din.txt
+```
